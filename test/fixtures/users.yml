@@ -1,5 +1,11 @@
 scott:
   first_name: "Scott"
   last_name: "McKeon"
-  email: "scot@email.com"
+  email: "scott@email.com"
   profile_name: "scottmckeon"
+
+jason:
+  first_name: "Jason"
+  last_name: "Seifer"
+  email: "jason@email.com"
+  profile_name: "jasonseifer"
