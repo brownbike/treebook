@@ -24,4 +24,12 @@ class User < ActiveRecord::Base
   def full_name
     first_name + " " + last_name
   end
+
+  def gravitar_url
+    stripped_email = email.strip
+    downcaased_email = stripped_email.downcase
+    hash = Digest::MD5.hexdigest(downcaased_email)
+
+    "http://www.gravatar.com/avatar/#{hash}"
+  end
 end
